@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jka-I8-5eD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tip View Controller-->
+        <scene sceneID="XDY-uR-Q4v">
+            <objects>
+                <viewController id="jka-I8-5eD" customClass="TipViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4XN-HQ-yHx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="b8M-BZ-i4M">
+                                <rect key="frame" x="20" y="301" width="374" height="304"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="10g-Lm-RLQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAU-GQ-5X2" customClass="TipLabel" customModule="calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mg-jn-mp5" customClass="TipTextField" customModule="calculator" customModuleProvider="target">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jJt-DC-wVP">
+                                        <rect key="frame" x="0.0" y="90" width="374" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpy-v3-Cq6" customClass="TipLabel" customModule="calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="plP-O5-Ed8">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp4-sP-XVP" customClass="TipButton" customModule="calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="34"/>
+                                                        <state key="normal" title="15%"/>
+                                                        <connections>
+                                                            <action selector="fifteenButtonTapped:" destination="jka-I8-5eD" eventType="touchUpInside" id="WOn-OY-XOu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-YE-BGs" customClass="TipButton" customModule="calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="62.5" y="0.0" width="62" height="34"/>
+                                                        <state key="normal" title="18%"/>
+                                                        <connections>
+                                                            <action selector="eighteenButtonTapped:" destination="jka-I8-5eD" eventType="touchUpInside" id="YGN-Ac-MeT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fna-Nv-L78" customClass="TipButton" customModule="calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="124.5" y="0.0" width="62.5" height="34"/>
+                                                        <state key="normal" title="20%"/>
+                                                        <connections>
+                                                            <action selector="twentyButtonTapped:" destination="jka-I8-5eD" eventType="touchUpInside" id="9bs-vc-3Z9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="urx-ak-ucD">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jH-y4-XUe" customClass="TipLabel" customModule="calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMh-Hg-TZw">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="K1T-3z-83T">
+                                        <rect key="frame" x="0.0" y="270" width="374" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4g-pQ-E38" customClass="TipLabel" customModule="calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGk-DE-YVX">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipping Buddy " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWX-us-Shh" customClass="AppNameLabel" customModule="calculator" customModuleProvider="target">
+                                <rect key="frame" x="50" y="94" width="314" height="157"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yWX-us-Shh" firstAttribute="top" secondItem="A9R-V5-nJ3" secondAttribute="top" constant="50" id="5ix-BT-rB7"/>
+                            <constraint firstItem="b8M-BZ-i4M" firstAttribute="top" secondItem="yWX-us-Shh" secondAttribute="bottom" constant="50" id="FLT-Zk-bGG"/>
+                            <constraint firstItem="yWX-us-Shh" firstAttribute="leading" secondItem="A9R-V5-nJ3" secondAttribute="leading" constant="50" id="XFn-sK-qlE"/>
+                            <constraint firstItem="b8M-BZ-i4M" firstAttribute="centerY" secondItem="A9R-V5-nJ3" secondAttribute="centerY" id="bIu-UP-Zqg"/>
+                            <constraint firstItem="b8M-BZ-i4M" firstAttribute="leading" secondItem="A9R-V5-nJ3" secondAttribute="leading" constant="20" id="bwL-iH-ZmP"/>
+                            <constraint firstAttribute="trailing" secondItem="yWX-us-Shh" secondAttribute="trailing" constant="50" id="nIW-PH-Sne"/>
+                            <constraint firstItem="A9R-V5-nJ3" firstAttribute="trailing" secondItem="b8M-BZ-i4M" secondAttribute="trailing" constant="20" id="sWV-fb-2sz"/>
+                            <constraint firstItem="b8M-BZ-i4M" firstAttribute="centerX" secondItem="A9R-V5-nJ3" secondAttribute="centerX" id="vGP-uT-xvM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A9R-V5-nJ3"/>
+                    </view>
+                    <connections>
+                        <outlet property="appTitleLabel" destination="yWX-us-Shh" id="hbf-SE-0M4"/>
+                        <outlet property="billLabel" destination="kAU-GQ-5X2" id="xlg-jW-MXm"/>
+                        <outlet property="billTextField" destination="2mg-jn-mp5" id="Ab4-AM-bQJ"/>
+                        <outlet property="eighteenButton" destination="Igl-YE-BGs" id="OxF-21-Q46"/>
+                        <outlet property="fifteenButton" destination="fp4-sP-XVP" id="JDN-F0-dBg"/>
+                        <outlet property="tipAmountLabel" destination="3jH-y4-XUe" id="b8Q-Tl-wK1"/>
+                        <outlet property="tipAmountSumLabel" destination="RMh-Hg-TZw" id="50W-3b-hT8"/>
+                        <outlet property="tipLabel" destination="Kpy-v3-Cq6" id="QF1-rt-lhU"/>
+                        <outlet property="totalLabel" destination="n4g-pQ-E38" id="zc6-rH-dUT"/>
+                        <outlet property="totalSumLabel" destination="BGk-DE-YVX" id="yHX-2B-Crc"/>
+                        <outlet property="twentyButton" destination="fna-Nv-L78" id="nFq-fn-6fu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRQ-yQ-7nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65.217391304347828" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+</document>
