@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C952955424B55093001BE1E9 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96C7C0D24B3CCBC00DFA971 /* Lato-Regular.ttf */; };
+		C952955524B55096001BE1E9 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96C7C0F24B3CCBC00DFA971 /* Lato-Light.ttf */; };
+		C952955624B55099001BE1E9 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96C7C0E24B3CCBC00DFA971 /* Lato-Bold.ttf */; };
 		C96C7BF524B3C50900DFA971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C7BF424B3C50900DFA971 /* AppDelegate.swift */; };
 		C96C7BF724B3C50900DFA971 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C7BF624B3C50900DFA971 /* SceneDelegate.swift */; };
 		C96C7BFC24B3C50900DFA971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96C7BFA24B3C50900DFA971 /* Main.storyboard */; };
@@ -221,8 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C952955624B55099001BE1E9 /* Lato-Bold.ttf in Resources */,
 				C96C7C0124B3C50D00DFA971 /* LaunchScreen.storyboard in Resources */,
 				C96C7C1424B3CEC800DFA971 /* Colors.xcassets in Resources */,
+				C952955424B55093001BE1E9 /* Lato-Regular.ttf in Resources */,
+				C952955524B55096001BE1E9 /* Lato-Light.ttf in Resources */,
 				C96C7BFE24B3C50D00DFA971 /* Assets.xcassets in Resources */,
 				C96C7BFC24B3C50900DFA971 /* Main.storyboard in Resources */,
 			);
